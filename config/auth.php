@@ -65,6 +65,8 @@ return [
             'model' => App\Models\User::class,
         ],
 
+        OwenIt\Auditing\AuditingServiceProvider::class,
+        
         // 'users' => [
         //     'driver' => 'database',
         //     'table' => 'users',
