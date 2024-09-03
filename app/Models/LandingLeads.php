@@ -51,7 +51,9 @@ class LandingLeads extends Model
      * @var array<string, string>
      */
     protected $casts = [
-        'birthdate' => 'date',
+
+        'identification'=>'encrypted',
+        'phone_number'=>'hashed',
         'time_stamp' => 'datetime',
         'created_at' => 'datetime',
         'updated_at' => 'datetime',
